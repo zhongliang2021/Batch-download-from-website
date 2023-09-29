@@ -10,14 +10,14 @@ pip install pandas
 pip install xlrd
 """
 
-Path = r"***"#总路径
+Path = r"total address"#总路径
 xls_file_path = os.path.join(Path, "下载目录.xls")
 record_zip_Path = os.path.join(Path, "ZIP文件夹")
 result_Path = os.path.join(Path, "处理结果")
 
 
 # 下载网址
-url_basic = "*****"
+url_basic = "your url"
 
 # 使用pandas的read_excel函数读取XLS文件
 df = pd.read_excel(xls_file_path)
@@ -53,7 +53,7 @@ def DownLoad_fun(imgpack_id,filename,download_file_path,output_folder_name):
             output_file.write(response.content)
 
 
-        unzip = os.path.join(Path, "缓存")
+        unzip = os.path.join(Path, "Cache")
         # 解压缩文件到新文件夹
         with zipfile.ZipFile(download_file_path, 'r') as zip_ref:
             zip_ref.extractall(unzip)
