@@ -1,5 +1,5 @@
 # Batch-download-from-website
-The function of this batch download program is to extract the files downloaded from the website and extract the images. 
+The function of this batch download program is to extract the files downloaded from the website and put the images from the same factory together. 
 
 To use the batch download program, you need to change the "total address" to the address of the Python files named "Downloader" , and create a new file folder called "Cache" at the same address.
 
